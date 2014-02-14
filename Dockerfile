@@ -3,7 +3,7 @@ MAINTAINER Matthew Landauer <matthew@oaf.org.au>
 
 # Special handling to install scraperwiki library
 RUN git clone https://github.com/openaustralia/scraperwiki-php.git /usr/local/lib/scraperwiki
-RUN cd /usr/local/lib/scraperwiki; git checkout morph_defaults
+RUN cd /usr/local/lib/scraperwiki; git checkout 8c73912af696b0e43b28d2f829f90b35ac99c429
 ADD php.ini /etc/php5/cli/php.ini
 
 # TODO Install php5-geoip (which doesn't appear to be present on this version of Ubuntu)
